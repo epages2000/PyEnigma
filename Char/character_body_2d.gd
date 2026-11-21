@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const BASE := "res://cantuna"
-const SPEED := 90.0
+const SPEED := 200.0
 const DIRS := ["down", "up", "left_down", "left_up", "right_down", "right_up"]
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D

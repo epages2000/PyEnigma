@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://cbcxo28eh3t06"]
+
+[ext_resource type="Texture2D" uid="uid://d0exfxwyl7d43" path="res://cantuna/Idle/idle.png" id="1_v073p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bvp3"]
+atlas = ExtResource("1_v073p")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lquwl"]
+atlas = ExtResource("1_v073p")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7mycd"]
+atlas = ExtResource("1_v073p")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_272bh"]
+atlas = ExtResource("1_v073p")
+region = Rect2(144, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
+atlas = ExtResource("1_v073p")
+region = Rect2(192, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kek77"]
+atlas = ExtResource("1_v073p")
+region = Rect2(240, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4c57u"]
+atlas = ExtResource("1_v073p")
+region = Rect2(288, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efxa6"]
+atlas = ExtResource("1_v073p")
+region = Rect2(336, 0, 48, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rtt2r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1bvp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lquwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7mycd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_272bh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vw27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kek77")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4c57u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efxa6")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbvdc"]
+size = Vector2(10, 21)
+
+[node name="Cantuna" type="CharacterBody2D" unique_id=778103780]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1615915714]
+position = Vector2(-1, -1)
+sprite_frames = SubResource("SpriteFrames_rtt2r")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=232994977]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_gbvdc")

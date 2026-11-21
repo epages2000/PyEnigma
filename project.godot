@@ -11,9 +11,8 @@ config_version=5
 [application]
 
 config/name="PyEnigma"
-run/main_scene="uid://cs28nobv8im4f"
+run/main_scene="uid://omeyewvh883i"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [display]
 
