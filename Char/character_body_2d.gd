@@ -9,7 +9,7 @@ var facing := "down"
 
 func _ready() -> void:
 	sprite.sprite_frames = _build_frames()
-	sprite.offset = Vector2(0, -32)  # los pies quedan en el origen del nodo
+	sprite.offset = Vector2(0, 0)  # los pies quedan en el origen del nodo
 	sprite.play("idle_down")
 
 func _build_frames() -> SpriteFrames:

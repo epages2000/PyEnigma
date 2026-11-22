@@ -67,7 +67,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gbvdc"]
-size = Vector2(10, 21)
+size = Vector2(10, 12)
 
 [node name="Cantuna" type="CharacterBody2D" unique_id=778103780]
 
@@ -78,5 +78,5 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=232994977]
-position = Vector2(0, -0.5)
+position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_gbvdc")
