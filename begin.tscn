@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://omeyewvh883i"]
 
 [ext_resource type="Script" uid="uid://c76kbmt4mq5a7" path="res://main_menu.gd" id="1_ewa42"]
-[ext_resource type="Texture2D" uid="uid://cxiiu01d2p1vs" path="res://assets/iglesia/tileset_32 (2).png" id="2_os6o7"]
+[ext_resource type="Texture2D" uid="uid://cxiiu01d2p1vs" path="res://assets/Taller.png" id="2_os6o7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7lc88"]
 texture = ExtResource("2_os6o7")

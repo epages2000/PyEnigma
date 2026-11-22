@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxiiu01d2p1vs"
-path="res://.godot/imported/tileset_32 (2).png-b8682b732a87033b6baad82720ca91bd.ctex"
+path="res://.godot/imported/Taller.png-05856e07185db6dcc10df10d4beeb072.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/iglesia/tileset_32 (2).png"
-dest_files=["res://.godot/imported/tileset_32 (2).png-b8682b732a87033b6baad82720ca91bd.ctex"]
+source_file="res://assets/Taller.png"
+dest_files=["res://.godot/imported/Taller.png-05856e07185db6dcc10df10d4beeb072.ctex"]
 
 [params]
 
