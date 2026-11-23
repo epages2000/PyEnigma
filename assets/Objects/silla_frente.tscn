@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dpl2obexy8i3x"]
+
+[ext_resource type="Texture2D" uid="uid://de0x0ccvfpd10" path="res://assets/Muebles extra/silla_frente.png" id="1_i4but"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lhbbi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l6244"]
+size = Vector2(12, 23)
+
+[node name="Silla Frente" type="StaticBody2D" unique_id=379078920]
+position = Vector2(-1, 0)
+physics_material_override = SubResource("PhysicsMaterial_lhbbi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1874717093]
+texture_filter = 1
+texture = ExtResource("1_i4but")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=319953178]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_l6244")

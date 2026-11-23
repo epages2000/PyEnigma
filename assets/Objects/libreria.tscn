@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dnwwpbgntwnmy"]
+
+[ext_resource type="Texture2D" uid="uid://bx5mxug0qymhx" path="res://assets/Muebles extra/estante_libros_a_con_libros.png" id="1_1en1y"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g5anv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnk7b"]
+size = Vector2(30, 30)
+
+[node name="Libreria" type="StaticBody2D" unique_id=1241132704]
+physics_material_override = SubResource("PhysicsMaterial_g5anv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1349433499]
+texture = ExtResource("1_1en1y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1669874653]
+shape = SubResource("RectangleShape2D_lnk7b")

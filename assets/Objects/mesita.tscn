@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cbrqxkcw7bl2l"]
+
+[ext_resource type="Texture2D" uid="uid://cjrsdp8e52cb3" path="res://assets/furnitures/mesita_noche.png" id="1_awcgs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pia0"]
+size = Vector2(16, 16)
+
+[node name="Mesita" type="StaticBody2D" unique_id=815912673]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=716564680]
+texture = ExtResource("1_awcgs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1923903732]
+shape = SubResource("RectangleShape2D_1pia0")
