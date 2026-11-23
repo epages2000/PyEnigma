@@ -1,5 +1,6 @@
 extends Sprite2D
 
+@export var limites_destino: ReferenceRect
 @export var destino: Marker2D
 @export var fade: ColorRect
 @export var duracion_fade := 0.12
@@ -47,6 +48,10 @@ func _transportar() -> void:
 	jugador.global_position = destino.global_position
 	var cam := jugador.get_node_or_null("Camera2D") as Camera2D
 	if cam:
+		if limites_destino:
+			CamaraUtil.aplicar(cam, limites_destino)
+		else:
+			CamaraUtil.aplicar_en(cam, destino.global_position)
 		cam.reset_smoothing()
 
 	if fade:

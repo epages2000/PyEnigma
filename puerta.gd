@@ -3,6 +3,7 @@ extends StaticBody2D
 signal puerta_abierta
 signal puerta_cerrada
 
+@export var limites_destino: ReferenceRect
 @export var textura_abierta: Texture2D
 @export var segundos_abierta := 3.0
 @export var espera_apertura := 0.12
@@ -58,6 +59,8 @@ func _transportar() -> void:
 	jugador.global_position = destino.global_position
 	var cam := jugador.get_node_or_null("Camera2D") as Camera2D
 	if cam:
+		if limites_destino:
+			CamaraUtil.aplicar(cam, limites_destino)
 		cam.reset_smoothing()
 
 	if fade:
