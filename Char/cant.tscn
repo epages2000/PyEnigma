@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cbcxo28eh3t06"]
 
+[ext_resource type="Script" uid="uid://blehld4jxkm4p" path="res://Char/character_body_2d.gd" id="1_rtt2r"]
 [ext_resource type="Texture2D" uid="uid://d0exfxwyl7d43" path="res://cantuna/Idle/idle.png" id="1_v073p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bvp3"]
@@ -70,6 +71,7 @@ animations = [{
 size = Vector2(10, 12)
 
 [node name="Cantuna" type="CharacterBody2D" unique_id=778103780 groups=["jugador"]]
+script = ExtResource("1_rtt2r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1615915714]
 position = Vector2(-1, -1)
