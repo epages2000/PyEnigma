@@ -6,6 +6,8 @@ extends Sprite2D
 @export var next_scene_path: String = "res://exterior.tscn"
 @export var return_marker_name: String = "spawn_marker_name"
 
+signal exited_scene
+
 var jugador: Node2D
 var jugador_encima := false
 var usando := false
@@ -73,6 +75,7 @@ func _transportar() -> void:
 		await t.finished
 
 	if return_marker_name != "":
+		exited_scene.emit()
 		get_tree().root.set_meta("spawn_marker_name", return_marker_name)
 
 	get_tree().change_scene_to_file(next_scene_path)

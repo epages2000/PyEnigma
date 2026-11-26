@@ -130,7 +130,7 @@ z_index = 1
 position = Vector2(529, 9)
 
 [node name="Camera2D" type="Camera2D" parent="Cantuna" unique_id=1872878780]
-position = Vector2(0, -15)
+position = Vector2(0, -10)
 scale = Vector2(0.976, 1.0892857)
 zoom = Vector2(4, 4)
 limit_left = 50
@@ -177,6 +177,9 @@ position = Vector2(185, 128)
 texture = ExtResource("12_27bay")
 script = ExtResource("9_kb5eu")
 fade = NodePath("../CanvasLayer/Fade")
+
+[node name="spawn_marker_name" type="Marker2D" parent="Puertas Y Alfombras/Alfombra" unique_id=806047862]
+position = Vector2(0, -5)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="Puertas Y Alfombras" unique_id=967160668]
 
@@ -352,6 +355,3 @@ offset_left = 409.0
 offset_top = -35.0
 offset_right = 585.0
 offset_bottom = 107.0
-
-[node name="spawn_marker_name" type="Marker2D" parent="." unique_id=806047862]
-position = Vector2(185, 123)
